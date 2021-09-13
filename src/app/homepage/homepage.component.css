@@ -1,0 +1,14 @@
+img{
+  margin-top: 100px;
+  width: 50%;
+}
+.head{
+  margin-top: -200px;
+  margin-left: -800px;
+  color: blue;
+}
+.head p{
+  color: black;
+  width: 50%;
+}
+

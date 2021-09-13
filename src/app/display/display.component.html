@@ -1,0 +1,23 @@
+<div class="center">
+  <div class="row">
+    <div class="col s20 m6">
+      <div *ngFor="let note of lists">
+      <div class="card yellow" *ngIf="note.creator==userId">
+        <div class="card-content black-text darken-1">
+          <span class="card-title">{{note.title}}</span>
+        </div>
+        <div class="card-content black-text darken-1">
+          <span class="card-title">{{note.content}}</span>
+        </div>
+        <button class="btn waves-red waves-effect" (click)="onEdit(note._id,note.title,note.content)" style="margin-bottom: 10px;">Edit
+          <i class="material-icons right">edit</i>
+        </button>
+        <button class="btn waves-red waves-effect red space" (click)="onDelete(note._id)" style="margin-bottom: 10px;">Delete
+          <i class="material-icons right">delete</i>
+        </button>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+
