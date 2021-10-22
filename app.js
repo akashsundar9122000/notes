@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
 
-mongoose.connect('mongodb+srv://akash:meannotesapp@cluster0.bbcxl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority').then(()=>{
+mongoose.connect('mongodb+srv://akash:<password>@cluster0.bbcxl.mongodb.net/DatbaseName?retryWrites=true&w=majority').then(()=>{
     console.log("Connected to database");
 }).catch(err=>{
     console.log(err);
